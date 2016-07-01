@@ -15,9 +15,14 @@ apt-get --purge remove hexchat # If it isn't installed, the option Chat Room of 
 apt-get --purge remove banshee
 apt-get --purge remove eog
 apt-get --purge remove tomboy
+# In Elementary OS
+apt-get --purge remove audience # Video
+apt-get --purge remove noise # Music
+apt-get --purge remove pantheon-calculator # Calculator
+apt-get --purge remove # Software Center
 # A lihgtweight desktop environment (OpenBox)
 apt-get install xorg
-apt-get install openbox obconf obmenu oblogout nitrogen lxpanel xcompmgr arandr conky clipman gnome-screnshot
+apt-get install openbox obconf obmenu oblogout nitrogen lxpanel xcompmgr arandr conky conky-manager clipman gnome-screnshot
 apt-get install lxappearance gtk.-engines-* gnome-themes .+-icon-theme # Themes
 add-apt-repository ppa:moka/daily
 apt-get update
@@ -31,6 +36,8 @@ nano ~/.config/openbox/autostart
 nano /etc/conky/conky.conf
 cp ~/.gtkrc-2.0 /root/.gtkrc-2.0
 apt-get install synaptic
+apt-get install gnome-system-monitor
+apt-get install grub-customizer
 # Multimedia
 apt-get install vlc
 apt-get install gimp
@@ -52,6 +59,7 @@ apt-get install nasm
 apt-get install cmake
 apt-get install cfortran
 apt-get install gfortran
+apt-get install hexedit
 # Games
 apt-get install bsdgames
 apt-get install figlet
@@ -77,6 +85,8 @@ apt-get install wordgrinder
 apt-get install texlive-full
 apt-get install gedit
 apt-get install haroopad
+apt-get install pandoc
+apt-get install html2text
 # Essential packages
 apt-get install fish
 apt-get install openssh-server rssh
@@ -103,6 +113,8 @@ apt-get install owncloud-client
 apt-get install alien
 apt-get install pal
 apt-get install unetbootin
+apt-get install virtualbox-qt
+apt-get install mysql-workbench
 # Enbale scan on Linux
 apt-get install gscantopdf djvulibre-bin djvulibre-bin-es tesserocr-act
 # Set your server to install OwnCloud
