@@ -19,7 +19,10 @@ apt-get --purge remove tomboy
 apt-get --purge remove audience # Video
 apt-get --purge remove noise # Music
 apt-get --purge remove pantheon-calculator # Calculator
-apt-get --purge remove # Software Center
+apt-get --purge remove software-center # Software Center
+apt-get --purge remove geary # Geary Email Client
+apt-get --purge remove maya # Calendar
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
 # A lihgtweight desktop environment (OpenBox)
 apt-get install xorg
 apt-get install openbox obconf obmenu oblogout nitrogen lxpanel xcompmgr arandr conky conky-manager clipman gnome-screnshot
@@ -42,6 +45,7 @@ apt-get install grub-customizer
 apt-get install vlc
 apt-get install gimp
 apt-get install audacity
+apt-get install brasero
 apt-get install moc moc-ffmpeg-plugin
 apt-get install imagemagick
 apt-get install inkscape
@@ -100,8 +104,8 @@ apt-get install finch
 apt-get install newsbeuter
 # Files
 apt-get install thunar
-apt-get install mc arj djvulibre-bin dbview odt2txt catdvi texlive-binaries
-apt-get install ranger caca-utils w3m-img
+apt-get install mc odt2txt texlive-binaries
+apt-get install ranger caca-utils
 apt-get install wipe
 apt-get install unrar-free
 apt-get install gpart gparted
@@ -115,6 +119,7 @@ apt-get install pal
 apt-get install unetbootin
 apt-get install virtualbox-qt
 apt-get install mysql-workbench
+apt-get install pv
 # Enbale scan on Linux
 apt-get install gscantopdf djvulibre-bin djvulibre-bin-es tesserocr-act
 # Set your server to install OwnCloud
