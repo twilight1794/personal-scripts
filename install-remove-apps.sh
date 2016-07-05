@@ -97,7 +97,6 @@ apt-get install html2text
 apt-get install fish
 apt-get install openssh-server rssh
 apt-get install telnet telnetd
-apt-get install wicd
 # Social Network
 apt-get install skype
 apt-get install pidgin
