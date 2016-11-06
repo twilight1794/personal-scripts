@@ -6,7 +6,7 @@
 # RAM: 4 GB
 # HDD: 320 GiB
 # Video Adapter: Intel 2nd Generation Core Processor Family Integrated Graphics Controller
-# This program is written on Python, and runs on GNU/Linux platforms. It's licensed under the GNU General Public License 3.0
+# This program is written on Python, and runs on GNU/Linux platforms. It's licensed under the MIT License
 import sys
 import os
 from subprocess import call
@@ -17,6 +17,7 @@ def sure():
 		return 3
 	elif sure != "y":
 		val = sure()
+		return 0
 	elif sure == "y":
 		return 0
 	return val
@@ -33,6 +34,8 @@ def inst_one():
 		return 2
 	except KeyboardInterrupt:
 		return 3
+	except IOError:
+		return 4
 def inst_two():
 	try:
 		script = ["sudo","chmod","+rwx--x--x","lubuntu.sh"]
@@ -46,6 +49,8 @@ def inst_two():
 		return 2
 	except KeyboardInterrupt:
 		return 3
+	except IOError:
+		return 4
 def inst_three():
 	try:
 		script = ["sudo","chmod","+rwx--x--x","debian.sh"]
@@ -59,6 +64,8 @@ def inst_three():
 		return 2
 	except KeyboardInterrupt:
 		return 3
+	except IOError:
+		return 4
 def inst_four():
 	try:
 		script = ["sudo","chmod","+rwx--x--x","mint.sh"]
@@ -72,10 +79,12 @@ def inst_four():
 		return 2
 	except KeyboardInterrupt:
 		return 3
-def main ():
+	except IOError:
+		return 4
+def main():
 	select=0
 	print ("My app installer v1.0")
-	print ("Licensed under the GNU GPL v3.0")
+	print ("Licensed under the MIT License")
 	print ("What do you do?")
 	print ("What profile do you wish to use?")
 	print ("1. Elementary OS 0.3.2")

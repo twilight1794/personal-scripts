@@ -7,24 +7,6 @@
 # HDD: 320 GiB
 # Video Adapter: Intel 2nd Generation Core Processor Family Integrated Graphics Controller
 
-# OS: Linux Mint 17.3 x86_64 Cinnamon
-# DE: Cinnamon 2.8.8
-# Linux Kernel: 3.19.0-32-generic
-su
-# Packages to remove (don't like me :3)
-apt-get --purge remove totem
-apt-get --purge remove hexchat # If it isn't installed, the option Chat Room of the Welcome Window of Linux Mint won't run.
-apt-get --purge remove banshee
-apt-get --purge remove eog
-apt-get --purge remove tomboy
-# In Elementary OS
-apt-get --purge remove audience # Video
-apt-get --purge remove noise # Music
-apt-get --purge remove pantheon-calculator # Calculator
-apt-get --purge remove software-center # Software Center
-apt-get --purge remove geary # Geary Email Client
-apt-get --purge remove maya # Calendar
-apt-get --purge remove 
 # A lihgtweight desktop environment (OpenBox)
 apt-get install xorg
 apt-get install openbox obconf obmenu oblogout nitrogen lxpanel xcompmgr arandr conky conky-manager clipman gnome-screnshot
