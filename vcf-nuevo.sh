@@ -123,7 +123,9 @@ echo "N:$apellidos;$nombre;;$prefijo;$sufijo" >> $archivo
 # NICKNAME
 echo -e -n "\nApodo: "
 read apodo
-echo "NICKNAME:$apodo" >> $archivo
+if [[ -n "$apodo" ]]; then
+    echo "NICKNAME:$apodo" >> $archivo
+fi
 
 # NOTE
 echo -n "Notas: "
@@ -135,7 +137,9 @@ fi
 # ORG
 echo -n "Organización: "
 read org
-echo "ORG:$org" >> $archivo
+if [[ -n "$org" ]]; then
+    echo "ORG:$org" >> $archivo
+fi
 
 # PHOTO
 echo -n "Fotografía: "
