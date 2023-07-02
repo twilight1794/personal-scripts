@@ -1,2 +1,3 @@
-# My-Personal-Scripts
-A little collection of scripts I use on my laptop
+# personal-scripts
+
+Pequeña colección de scripts que me facilitan la vida
